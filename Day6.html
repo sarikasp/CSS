@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Sixth Day</title>
+    <style>
+        body{
+            font-family: constantia;
+            /* margin: 0; */
+            background: #d1e0e0;
+        }
+        #cssCalc{
+            background: linear-gradient(#000033, #000099, #000033);
+            border: 5px solid black;
+            color: white;
+            /* width: 400px; */
+            height: 300px;
+            padding: 20px;
+
+            /* width: 100%; */
+            /* width: calc(100% - 40px - 40px - 1px - 1px); */
+            width: 500px;
+
+            position: absolute;
+            left: calc(50% - 250px - 20px - 5px);
+            top: calc(50% - 150px - 20px - 5px);
+        }
+
+        /* #header{
+            background: linear-gradient(#990000, #000099, #990000);
+            border: 0px solid black;
+            color: white;
+            width: 100%;
+            height: 100px;
+        }
+        #content{
+            background: linear-gradient(#ff0066, #000099, #ff0066);
+            border: 0px solid black;
+            color: white;
+            width: 100%;
+            height: calc(100vh - 200px);
+        }
+        #footer{
+            background: linear-gradient(#006600,#ff0066,#006600);
+            border: 0px solid black;
+            color: white;
+            width: 100%;
+            height: 100px;
+        } */
+   
+        /* img{
+            width: 700px;
+            height: 600px; */
+
+            /* circle */
+            /* clip-path: circle(40% at 50% 50%); */
+            /* clip-path: circle(40% at 0% 50%); */
+            /* clip-path: circle(40% at 100% 50%); */
+            /* clip-path: circle(60% at 0% 0%); */
+            /* clip-path: circle(60% at 100% 0%); */
+
+            /* ellipse */
+            /* clip-path: ellipse(20% 40% at 50% 50%); */
+            /* clip-path: ellipse(40% 30% at 50% 50%); */
+            /* clip-path: ellipse(10% 40% at 20% 50%); */
+            /* clip-path: ellipse(10% 40% at 80% 50%); */
+            /* clip-path: ellipse(10% 40% at 0% 50%); */
+
+            /* inset */
+            /* clip-path: inset(5% 20% 15% 10%); */
+            /* clip-path: inset(25% 40% 35% 40%); */
+            
+            /* polygon */
+            /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+            /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        } */
+        /* #cssClip{
+            height: 500px;
+            width: 500px;
+            background: #000066;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        } */
+    
+        /* img{
+            width: 500px;
+            height: 300px;
+            float: left; */
+            /* clip-path: circle(36% at 40% 50%);
+            shape-outside: circle(36% at 40% 50%); */
+            /* shape-margin: 20px; */
+
+            /* clip-path: polygon(0 1%, 0% 100%, 99% 46%);
+            shape-outside: polygon(0 1%, 0% 100%, 99% 46%); */
+
+            /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            shape-outside: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+        
+            /* clip-path: inset(34% 30% 15% 10%);
+            shape-outside: inset(34% 30% 15% 10%);
+        } */
+
+        img{
+            /* filter: blur(5px); */
+
+            /* filter: brightness(200%); */
+            /* filter: brightness(0%); */
+            /* filter: brightness(10%); */
+            /* filter: brightness(50%); */
+
+            /* filter: contrast(200%); */
+            /* filter: contrast(0%); */
+            /* filter: contrast(60%); */
+
+            /* filter: drop-shadow(8px 8px 7px #001a33); */
+            /* filter: drop-shadow(8px -8px 7px #001a33); */
+            /* filter: drop-shadow(-8px -8px 7px #001a33); */
+
+            /* filter: grayscale(100%); */
+            /* filter: grayscale(0%); */
+            /* filter: grayscale(50%); */
+
+            /* filter: hue-rotate(200deg); */
+            /* filter: hue-rotate(100deg); */
+            /* filter: hue-rotate(50deg); */
+
+            /* filter: invert(100%); */
+            /* filter: invert(50%); */
+            /* filter: invert(80%); */
+
+            /* filter: opacity(50%); */
+            /* filter: opacity(0%); */
+            /* filter: opacity(100%); */
+            /* filter: opacity(80%); */
+
+            /* filter: saturate(200%); */
+            /* filter: saturate(100%); */
+            /* filter: saturate(0%); */
+            /* filter: saturate(50%); */
+
+            /* filter: sepia(100%); */
+            /* filter: sepia(0%); */
+            /* filter: sepia(50%); */
+
+            /* filter: none; */
+
+            /* filter: blur(2px) hue-rotate(100deg) saturate(200%); */
+        }
+        
+        /* #firstBox{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(#006600,#ff0066,#006600);
+            border: 5px solid black; */
+            /* transition-property: width, height, background;
+            transition-duration: 2s, 2s, 2s;    */
+            /* transition: all 2s; */
+
+            /* transition-property: all;
+            transition-duration: 2s, 2s, 2s; */
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: steps(4); */
+            /* transition-timing-function: steps(4, start); */
+            /* transition-timing-function: steps(4, end); */
+            /* transition-timing-function: step-start; */
+            /* transition-timing-function: step-end; */
+            /* transition-timing-function: cubic-bezier(0.1,0.7,1.0,0.1); */
+            /* transition-timing-function: cubic-bezier(1.0,0.7,1.0,0.1); */
+            /* transition-timing-function: linear;
+            transition-delay: 2s; */
+
+            /* transition: all 1s linear;
+            margin-bottom: 60px;
+
+        } */
+        /* #firstBox:hover{
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(#000033, #0000b3, #000033);
+        } */
+        /* #firstBox:active{
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(#000033, #0000b3, #000033);
+        }
+        input{
+            width: 150px;
+            transition: width 1.5s;
+        }
+        input:focus{
+            width: 300px;
+        } */
+/* 
+        @media only screen and (max-width: 960px) {
+            #firstBox{
+                width: 500px;
+                height: 500px;
+            }
+        } */
+    
+    #cssTransform{
+        width: 200px;
+        height: 100px;
+        background: #000033;
+        /* margin: 150px 300px; */
+        color: aliceblue;
+        padding: 20px;
+
+        /* rotate */
+        /* transform: rotate(30deg); */
+        /* transform: rotate(90deg); */
+        /* transform: rotate(-30deg); */
+        /* transform: rotate(180deg); */
+
+        /* skew, skewX & skewY */
+        /* transform: skewX(30deg); */
+        /* transform: skewX(60deg); */
+        /* transform: skewY(30deg); */
+        /* transform: skewY(60deg); */
+
+        /* transform: skew(20deg, 30deg); */
+
+        /* transform-origin */
+        /* transform: rotate(30deg); */
+
+        /* transform: rotate(60deg); */
+        /* transform-origin: left top; */
+        
+        /* transform: rotate(60deg); */
+        /* transform: rotate(30deg);
+        transform-origin: left bottom; */
+
+        /* transform: rotate(30deg); */
+        /* transform-origin: 20% 40%; */
+        /* transform: rotate(60deg);
+        transform-origin: 100% 100%; */
+
+        /* translate: */
+        /* transform:translate(30px, 80px); */
+        /* transform:translate(-30px, -80px); */
+        /* transform:translateX(80px); */
+        /* transform:translateY(80px); */
+        /* transform:translateY(-80px); */
+
+        /* scale */
+        /* transform-origin: left top; */
+        /* transform:scale(2); */
+        /* transform:scaleX(2); */
+        /* transform:scaleY(2); */
+
+        /* Matrix: */
+        /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+
+        /* none */
+        /* transform: none; */
+        /* transform: scale(1); */
+        /* transition: transform 1s; */
+        /* transform-origin: left top; */
+        /* transform: translate(50px, 50px); */
+        /* transform: translate(0, 0); */
+        /* transform: rotate(0deg); */
+
+        /* transform: rotate(30deg) scale(2) skew(30deg) ; */
+        transform: rotate(0deg) scale(1);
+        transition: transform 1s;
+    }
+    #cssTransform:hover{
+        /* transform: scale(2); */
+        /* transform: translate(50px, 50px); */
+        /* transform: rotate(30deg); */
+        /* transform: rotate(180deg); */
+        /* transform: rotate(360deg); */
+
+        transform: rotate(30deg) scale(2);
+    }
+    .base{
+        width: 350px;
+        height: 250px;
+        background: gray;
+        font-size: 18px;
+        text-align: center;
+        margin: 100px 0 0 100px;
+    }
+    #cssTransform3D{
+        width: 350px;
+        height: 250px;
+        background: crimson;
+
+        /* rotateX */
+        /* transform: rotateX(180deg); */
+        /* transform: rotateX(60deg); */
+        /* transform: perspective(800px) rotateX(80deg); */
+        /* transform: perspective(800px) rotateX(30deg); */
+        /* transform: perspective(300px) rotateX(30deg); */
+        /* transform: perspective(300px) rotateX(120deg); */
+
+        /* transform-origin: left bottom; */
+        /* transform: perspective(300px) rotateX(60deg); */
+        /* transform: perspective(800px) rotateX(30deg); */
+        /* transform: perspective(800px) rotateX(80deg); */
+        /* transform: perspective(800px) rotateX(60deg); */
+        /* transform: perspective(300px) rotateX(60deg); */
+
+        /* rotateY */
+        /* transform: perspective(800px) rotateY(60deg); */
+        /* transform: perspective(800px) rotateY(80deg); */
+        /* transform: rotateY(80deg); */
+
+        /* transform-origin: left center; */
+        /* transform: perspective(800px) rotateY(80deg); */
+        /* transform: perspective(800px) rotateY(30deg); */
+
+        /* transform-origin: right center; */
+        /* transform: perspective(800px) rotateY(30deg); */
+        /* transform: perspective(800px) rotateY(-30deg); */
+
+        /* rotateZ */
+        /* transform:rotateZ(50deg); */
+        /* transform:rotateZ(90deg); */
+        /* transform:rotateZ(20deg); */
+
+        /* transform: rotateY(60deg) translateZ(200px); */
+        /* transform: perspective(800px) rotateY(60deg) translateZ(200px); */
+        /* transform: perspective(800px) rotateY(60deg) translateZ(0px); */
+        /* transform: perspective(800px) rotateY(60deg) translateZ(100px); */
+        /* transform: perspective(800px) rotateY(60deg) translateZ(300px); */
+        /* transform: perspective(800px) rotateY(60deg) translateX(300px); */
+        /* transform: perspective(800px) rotateY(60deg) translateZ(200px); */
+        /* transform: perspective(800px) rotateY(60deg) translateZ(300px); */
+
+        /* transform: perspective(800px) rotateY(60deg) translate3d(50px, 50px, 0px); */
+        /* transform: perspective(800px) rotateY(60deg) translate3d(50px, 50px, 100px); */
+        /* transform: perspective(800px) rotateY(60deg) translate3d(50px, 50px, 200px); */
+        /* transform: perspective(800px) rotateY(60deg) translate3d(50px, 100px, 200px); */
+        /* transform: perspective(800px) rotateY(60deg) translate3d(100px, 100px, 200px); */
+        /* transform: perspective(800px) rotateY(60deg) translate3d(300px, 100px, 200px); */
+        /* transform: perspective(800px) rotateY(60deg) translate3d(300px, 100px, 300px); */
+
+        /* transform: perspective(800px) rotateX(40deg) scaleZ(1); */
+        /* transform: perspective(800px) rotateX(40deg) scaleZ(2); */
+        /* transform: perspective(800px) scaleZ(1) rotateX(60deg); */
+        /* transform: perspective(800px) scaleZ(2) rotateX(60deg); */
+        /* transform: perspective(800px) scaleZ(5) rotateX(60deg); */
+        /* transform: perspective(800px) scaleZ(3) rotateX(60deg); */
+        /* transform: perspective(800px) scale3d(2,2,1) rotateX(0deg); */
+        /* transform: perspective(800px) scale3d(2,2,2) rotateX(60deg); */
+        /* transform: perspective(800px) scale3d(1,1,2) rotateX(60deg); */
+        /* transform: perspective(800px) scale3d(1,1,3) rotateX(60deg); */
+        transform: none;
+    }
+    .basePerspective{
+        width: 350px;
+        height: 250px;
+        background: gray;
+        font-size: 18px;
+        text-align: center;
+        margin: 100px 0 0 100px; 
+        perspective: 800px; 
+        /* perspective: 100px;  */
+        /* perspective: center center; */
+        /* perspective-origin: left; */
+        /* perspective-origin: right; */
+        /* perspective-origin: top; */
+        /* perspective-origin: bottom; */
+        /* perspective-origin: left bottom; */
+        /* perspective-origin: right bottom; */
+        /* perspective-origin: top right; */
+        perspective-origin: 20% 50%;
+    }
+    #cssPerspective{
+        width: 350px;
+        height: 250px;
+        background: crimson;
+
+        /* transform: none; */
+        /* transform: rotateX(60deg); */
+        /* transform: rotateX(80deg); */
+        /* transform: rotateX(80deg); */
+        /* transform: rotateX(60deg); */
+
+        /* transform: rotateY(60deg); */
+        /* transform: rotateY(30deg); */
+        transform: rotateY(60deg);
+    }
+
+    .baseTransformStyle{
+        width: 400px;
+        height: 250px;
+        margin: 0 0 70px 100px;
+        background: gray;
+        perspective: 800px;  
+        /* transform: rotateX(30deg); */
+        transform: rotateY(30deg);
+
+        transform-style: preserve-3d;
+        /* transform-style: flat; */
+    }
+    #cssTransformStyle{
+        width: 400px;
+        height: 250px;
+        /* padding-top: 20px;  */
+        background: crimson; 
+        font-size: 30px; 
+        text-align: center; 
+
+        transform: rotateX(60deg);
+        transform-origin: bottom;
+    }
+    .card{
+        width: 300px;
+        height: 300px;
+        border: 0px solid black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -150px;
+        perspective: 500px;
+    }
+    .card:hover .content{
+        transform: rotateY(180deg);
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    .front,
+    .back{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #fff;
+        color: #006666;
+        font-size: 60px;
+        text-align: center;
+        line-height: 300px;
+        border-radius: 5px;
+        backface-visibility: hidden;
+    }
+    .back{
+        background: #006666;
+        color: #fff;
+        /* transform: rotateX(180deg); */
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to MinSkole......!!!!!!</h1>
+    
+
+    <!-- CSS calc() function -->
+<!-- 
+    .classA{
+        width:calc(100% - 1em);
+    }
+
+    .classB{
+        width:calc(100% / 2);
+    }
+
+    .classC{
+        background-image:url(logo.png);
+        background-position:calc(100%-50px) calc(100%-20px);
+    }
+
+    .classD{
+        background-color:hsl(180,calc(2*25%), 65%);
+    }
+ -->
+
+    <!-- <div id="cssCalc"> -->
+        <!-- The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/). -->
+    <!-- </div> -->
+
+<!-- 
+        <p>
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+        <br><br>
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+        <br><br>
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+        <br><br>
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+
+        <br><br>
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+        <br><br>
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+        <br><br>
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+        <br><br>
+        The calc() function performs a calculation to be used as 
+        the property value. Version: CSS3. Browser Support.
+        calc() is a native CSS way to do simple math right in CSS as 
+        a replacement for any length value (or pretty much any number 
+        value). It has four simple math operators: add (+), subtract 
+        (-), multiply (*), and divide (/).
+    </p>
+ -->
+
+    <!-- <div id="header">
+        header
+    </div>
+    <div id="content">
+        content
+    </div>
+    <div id="footer">
+        footer
+    </div> -->
+
+
+<!-- CSS Clip-path values -->
+<!-- circle, ellipse, inset, polygon -->
+
+<!-- <img src="img/wallpaper.jpg" alt=""> -->
+
+<!-- <div id="cssClip"></div> -->
+
+
+<!-- CSS Shape-Outside -->
+<!-- circle, ellipse, inset, polygon -->
+
+<!-- 
+<div>
+
+    <img src="img/wallpaper.jpg" alt="">
+
+<p>
+    The shape-outside CSS property defines a shape—which may be 
+    non-rectangular—around which adjacent inline content should wrap. 
+    By default, inline content wraps around its margin box; shape-outside 
+    provides a way to customize this wrapping, making it possible to wrap 
+    text around complex objects rather than simple boxes.
+</p>
+<h2>What is shape-outside</h2> 
+Shape-outside is a new CSS property that changes the shape of items that are wrapped. Instead of being limited to a rectangular bounding box around the image, shape-outside allows us to shape content to fit the image.
+<br>
+<b>Here is how MDN describes shape-outside:</b> 
+<br>
+The shape-outside CSS property uses shape values to define the float area for a float and will cause inline content to wrap around the shape instead of the float’s bounding box.
+The most important take away from that description is this new property applies to images that uses a float. The CSS shape-outside property controls how text wraps around any floated image. The text that is wrapped can take the shape of a circle, ellipse, rectangle or polygon.
+<br>
+<h2>Using shape-outside</h2>
+The shape-outside property takes a “basic shape” and applies a shape function to it. The shape function is used to change the shape of the float area of the shape. The CSS shape-outside property provides functionality to create these shape functions:
+<ul>
+   <li>circle</li> 
+   <li>ellipse</li> 
+    <li>polygon</li> 
+    <li>rectangle</li> 
+    <li>url</li>
+</ul>
+The image can be positioned with these values. The values are appended to the end:
+<ul>
+<li> margin-box</li> 
+<li> padding-box</li> 
+<li> border-box</li> </ul>
+The image must have intrinsic dimensions. You must set the height and width of the element. This will be used by the shape function to create a coordinate system that is used when wrapping text around the image.
+
+<h2>Circle</h2> 
+Circle() is one of the functional values provided with shape-outside. The full notation for circle() is circle(r at cx cy) where r is the radius of the circle and cx and cy are the coordinates for the center of the circle. If you omit them, the center of the image will be used as the default values.
+
+<h2> Ellipse</h2>
+Ellipse is a variation of the circle where the item is elongated on either the horizontal or vertical axis. The full notation for ellipse() is ellipse(rx ry at cx cy) where rx and ry are the radii for the ellipse and cx and cy are the coordinates for the center of the ellipse.
+
+<h2>Polygon</h2>
+The polygon function provides an unlimited range of shapes. The full notation for polygon() is polygon(x1 y1, x2 y2, …) where each pair specifies the x y coordinates for a vertex of the polygon. To use the polygon() function you must specify a minimum of 3 pairs of vertex.
+
+Polygon is used with a clip-path. The clip-path CSS property creates a clipping region that defines what part of an element should be displayed. Anything inside the region is displayed, while those outside are hidden.
+
+</div>
+ -->
+
+<!-- CSS Filter Values: -->
+
+<!-- <img src="img/orchid3.jpg" alt=""> -->
+
+<!-- CSS Transition Properties: -->
+<!-- transition, transition-property, transition-delay, transition-timing-function -->
+
+<!-- <div id="firstBox"></div> -->
+<!-- <input type="text" name="" id=""> -->
+
+
+<!-- CSS Transform - 2D -->
+<!-- <p>
+<h2>2D Transformation of Elements</h2>
+With CSS3 2D transform feature you can perform basic transform manipulations such as move, rotate, scale and skew on elements in a two-dimensional space.
+<br>
+A transformed element doesn't affect the surrounding elements, but can overlap them, just like the absolutely positioned elements. However, the transformed element still takes space in the layout at its default (un-transformed) location.
+<br>
+<h2>Using CSS Transform and Transform Functions</h2>
+The CSS3 transform property uses the transform functions to manipulate the coordinate system used by an element in order to apply the transformation effect.
+<br>
+The following section describes these transform functions:
+<br>
+<h2>The translate() Function</h2>
+Moves the element from its current position to a new position along the X and Y axes. This can be written as translate(tx, ty). If ty isn't specified, its value is assumed to be zero.
+</p>
+
+<div id="cssTransform"><h2>MinSkole....!!!!</h2></div>
+
+<p>
+<h2>The rotate() Function</h2>
+The rotate() function rotates the element around its origin (as specified by the transform-origin property) by the specified angle. This can be written as rotate(a).
+<br>
+<h2>The scale() Function</h2>
+The scale() function increases or decreases the size of the element. It can be written as scale(sx, sy). If sy isn't specified, it is assumed to be equal to sx.
+<br>
+<h2>The skew() Function</h2>
+The skew() function skews the element along the X and Y axes by the specified angles. It can be written as skew(ax, ay). If ay isn't specified, its value is assumed to be zero.
+<br>
+<h2>The matrix() Function</h2>
+The matrix() function can perform all of the 2D transformations such as translate, rotate, scale, and skew at once. It takes six parameters in the form of a matrix which can be written as matrix(a, b, c, d, e, f). The following section will show you how each of the 2D transformation functions can be represented using the matrix().
+</p>
+ -->
+
+
+<!-- CSS Transform - 3D -->
+
+<!-- 
+<div class="base">
+    <div id="cssTransform3D"><h2>MinSkole...!!!</h2></div>
+</div>
+ -->
+
+
+<!-- CSS Perspective -->
+
+<!-- 
+<div class="basePerspective">
+    <div id="cssPerspective"><h2>MinSkole...!!!</h2></div>
+</div>
+ -->
+
+<!-- CSS Transform-style -->
+
+<!-- 
+<div class="baseTransformStyle">
+    <div id="cssTransformStyle"><h2>MinSkole....!!!!</h2></div>
+</div>
+ -->
+
+
+<!-- CSS Backface-Visibility -->
+
+<div class="card">
+    <div class="content">
+        <div class="front">Front..!!</div>
+        <div class="back">Back..!!</div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

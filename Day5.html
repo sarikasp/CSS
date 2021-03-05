@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fifth Day</title>
+    <style>
+        :root{
+            --main-color:linear-gradient(#000033, #000066, #000099);
+            --head-font:constantia;
+            --p-font:verdana;
+        }
+        /* body{
+            font-family: constantia;
+            margin: 0;
+            font-size: 15px;
+        } */
+        ul{
+            /* visibility: hidden; */
+            /* display: none; */
+             visibility: visible;
+        }
+        tr.first{
+            visibility: collapse;
+        }
+        .second{
+            visibility: collapse;
+        }
+
+        body{
+            /* font-family: constantia; */
+            background-color: #ccccff;
+            margin: 0;
+        }
+        
+        #wrapper{
+                border: 0px solid black;
+                width: 1000px;
+                background: white;
+                margin: 0 auto;
+
+        }
+        #header{
+            background: var(--main-color);
+            color: white;
+            height: 100px;
+            font-family: var(--head-font);
+        }
+        #header h1{
+            padding: 30px 0 0 20px;
+        }
+        #menu{
+            background:linear-gradient(#000033, #000099, #000033);    
+        }
+        #menu ul{
+            margin: 0;
+            padding: 0;  
+        }
+        #menu li{
+            display: inline-block;   
+        }
+        #menu li a{
+            display: block;
+            padding: 10px 15px;
+            color: white; 
+            text-decoration: none;    
+        }
+        #menu li a:hover{
+            background: #999966;
+            color: black;
+            
+        }
+        #content{
+            width: 800px;
+            float: left;
+            min-height: 450px;
+            padding: 10px;
+            box-sizing: border-box;
+            --m-color:red;
+            color: var(--m-color);
+        }
+        #content h2, h3{
+            color:var(--main-color);
+            font-family: var(--head-font);
+        }
+        #content a{
+            color: var(--m-color);
+        }
+        #sidebar{
+            background:linear-gradient(#000033, #000099, #0000e6);
+            width: 200px;
+            float: right;
+            min-height: 500px; 
+            color: var(--m-color); 
+        }
+        #sidebar  li{
+            color: white;
+            padding: 10px 2px;
+        }
+        #sidebar  li a{
+            color: white;
+            text-decoration: none;
+            
+        }
+        #footer{
+            background:linear-gradient(#000033, #000066, #000033);
+            clear: both;
+            color: white;
+            padding: 10px 10px;
+            text-align: right;
+        }
+
+        /* @media screen and (max-width: 1020px){
+            #wrapper{
+                width: 800px;
+            }
+            #content{
+                width: 80%;
+            }
+            #sidebar{
+                width: 18%;
+            }
+        }
+
+        @media screen and (max-width: 810px){
+            #wrapper{
+                width: 500px;
+            }
+            #content{
+                width: 65%;
+            }
+            #sidebar{
+                width: 34%;
+            }
+        }
+
+        @media screen and (max-width: 510px){
+            #wrapper{
+                width: auto;
+            }
+            #content{
+                width: 100%;
+                float: none;
+            }
+            #sidebar{
+                width: 100%;
+                float: none;
+            }
+        #header h1{
+            padding: 30px 0 0 0 2;
+            text-align: center;
+        }
+    } */
+
+    #cssAbsolutePosition{
+        background: #006666;
+        width: 350px;
+        height: 350px;
+        border: 1px solid black;
+        position: relative;
+    }
+    #cssPosition{
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        background:linear-gradient(#000033, #0000e6, #000033);
+
+        /* position: relative;
+        left: 100px;
+        top: -100px; */
+
+        /* position: absolute;
+        top: 10px;
+        left: 100px; */
+
+        /* position: fixed;
+        top: 20px;
+        left: 20px; */
+
+        /* position: sticky;
+        top: 50px;
+        left: 50px; */
+
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+
+    /* div{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        position: absolute;
+        font-size: 25px;
+    } */
+    #zIndexBox1{
+        background: #000033;
+        top: 100px;
+        left: 50px;
+        color: white;
+        z-index: 1;
+    }
+    #zIndexBox2{
+        background: #000080;
+        top: 150px;
+        left: 100px;
+        color: white;
+        /* z-index: 1; */
+        /* z-index: -1; */
+        z-index: 2;
+    }
+    #zIndexBox3{
+        background: #0000cc;
+        top: 200px;
+        left: 150px;
+        color: white;
+        z-index: 3;
+    }
+    #zIndexBox4{
+        background:#4d4dff;
+        top: 250px;
+        left: 200px;
+        color: white;
+        z-index: 4;
+    }
+
+
+    /* @media screen and (max-width: 1200px){
+        body{
+            background:pink;
+            font-size: 70px;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        body{
+            background:lightblue;
+            font-size: 50px;
+        }
+    }
+    @media screen and (max-width: 700px){
+        body{
+            background:orangered;
+            font-size: 25px;
+        }
+    }
+    @media screen and (max-width: 480px){
+        body{
+            background:green;
+            font-size: 15px;
+        }
+    } */
+    
+    table{
+        /* border-spacing: 10px 20px; */
+        /* border-spacing: 0px 20px; */
+        /* border-spacing: 10px 0px; */
+
+        /* border-collapse: collapse; */
+        /* border-collapse: separate; */
+        
+        width: 400px;
+
+        border-collapse: collapse;
+
+        /* empty-cells: hide; */
+        /* empty-cells: show; */
+        
+        /* table-layout: auto; */
+        /* table-layout: fixed; */
+    }
+    table, td, th{
+        border: 1px solid black;
+    }
+    td, th{
+        vertical-align: top;
+        /* vertical-align: bottom; */
+        padding: 10px 20px;
+    }
+    caption{
+        /* caption-side: bottom; */
+        caption-side: top;
+    }
+    tr:hover{
+        background: #669999;
+    }
+    tr:nth-child(even){
+        background: #999966;
+    }
+
+    #cssResize{
+        border: 3px solid black;
+        text-align: center;
+        width: 500px;
+        height: 300px;
+        color: white;
+        background:linear-gradient(#000033, #000099, #0000ff,#000099, #000033); 
+        
+        overflow: auto;
+        /* resize: vertical;
+        resize: horizontal; */
+        resize: both;
+        /* resize: none; */
+
+        margin-bottom: 20px;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    #cssCursor{
+        border: 3px solid black;
+        text-align: center;
+        width: 500px;
+        height: 300px;
+        color: white;
+        background:linear-gradient(#000033, #000099, #0000ff,#000099, #000033);  
+    
+        /* cursor: help; */
+        /* cursor: pointer; */
+        /* cursor: wait; */
+        cursor: cell;
+    }
+
+    #cssMeasurement{
+        /* border: 3px solid black; */
+        text-align: center;
+        /* width: 500px; */
+        /* width: 50%;
+        height: 300px; */
+        color: white;
+        background:linear-gradient(#000033, #000099, #0000ff,#000099, #000033);  
+
+        /* font-size: 1em; */
+        /* font-size: 2em; */
+
+        /* font-size: 2rem; */
+        /* font-size: 1rem; */
+
+        /* vw */
+        /* width: 100vw;
+        height: 100vh; */
+        border: 0px solid black;
+        /* width: 50vw; */
+        /* height: 50vh; */
+        /* width: 30vw; */
+
+        /* width: 100vw; */
+        /* width: 100%; */
+        /* width: 50%; */
+
+        /* width: 50vw;
+        height: 50vh; */
+
+        /* width: 50vmax; */
+        width: 50vmin;
+        height: 50vh;
+        /* font-size: 1vw; */
+        font-size: 1vh;
+    }
+
+    /* html{
+        font-size: 100px;
+    } */
+    #cssMeasurement1{
+        /* border: 3px solid black;
+        width: 600px;
+        height: 600px;
+        background:#009999;  */
+
+        /* font-size: 20px;  */
+        border: 3px solid black;
+        /* width: 600px;
+        height: 600px; */
+
+        /* width: 30vw;
+        height: 50vh; */
+
+        width: 600px;
+        height: 600px;
+    }
+    
+    
+    </style>
+
+</head>
+<body>
+    <!-- <h1>Welcome to MinSkole...!!!!!!</h1> -->
+
+    <!-- CSS Visibility -->
+    <!-- Visibility Value: Visible, Hidden, Collapse -->
+<!-- 
+    <ul>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Chiku</li>
+    </ul>
+
+    <p>
+        This property is used to specify whether an element is visible or 
+        not in a web document but the hidden elements take up space in the 
+        web document. Use the display property to remove or display property 
+        to both hide and delete an element from the browser.
+    </p>
+
+    <table border="1">
+        <tr>
+            <td>Aster</td>
+            <td>Daisy</td>
+        </tr>
+        <tr class="first">
+            <td>Orachid</td>
+            <td>Jasmine</td>
+        </tr>
+        <tr>
+            <td class="second">Lily</td>
+            <td>Rose</td>
+        </tr>
+    </table>
+ -->
+
+
+ <!-- CSS Design Basic Layout: -->
+
+<!-- 
+ <div id="wrapper">
+     <div id="header">
+       <h1>Welcome to MinSkole....!!!!!</h1>
+     </div>
+     <div id="menu">
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Gallery</a></li>
+             <li><a href="#">Contact Us</a></li>
+         </ul>
+     </div>
+     <div id="content">
+         <h2>Basic Design Layout</h2>
+         <p>
+            Whether you’re fairly new to CSS or an experienced developer from elsewhere in the stack who wants to make sure your understanding of layout today is up to date, this guide covers everything you need to know about CSS Layout today.
+                <br>
+            Over the past couple of years, CSS Layout has dramatically changed as well as the way we develop the front end of our sites. We now have a real choice in terms of the layout methods we use in CSS to develop our sites, which means we often need to make a choice as to which approach to take. In this article, I will run through the various layout methods that you have available to you by explaining the basics of how they are used and what they are used for.
+            <br>
+            This guide is for you if you are fairly new to CSS and wondering what the best way to approach layout is, but also if you are an experienced developer from elsewhere in the stack who wants to make sure your understanding of layout today is up to date. I have not tried to fully document each layout method here, as that would have created a book and not an article. Instead, I am giving an overview of what is available to you, with plenty of links to find out more.
+            <br>
+           <h3>Normal Flow</h3> 
+            If you take an HTML webpage which has no CSS applied to change the layout, the elements will display in normal flow. In normal flow, boxes are displayed one after another based on the Writing Mode of the document. This means that if you have a horizontal writing mode, one in which sentences run left to right or right to left, normal flow will display the boxes of block level elements one after the other vertically down the page.
+         </p>
+     </div>
+     <div id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+     </div>
+     <div id="footer">
+         minskole@copyright 2020.
+     </div>
+ </div> 
+ -->
+
+
+<!-- CSS Position Values: -->
+<!-- Static, Relative, Absolute, Fixed, Sticky -->
+
+<!-- 
+<div>
+<h3>static</h3> 
+The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+
+<h3>relative</h3> 
+The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
+This value creates a new stacking context when the value of z-index is not auto. Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.
+<div id="cssAbsolutePosition">
+    <div id="cssPosition"></div>
+</div>
+
+
+<h3>absolute</h3>
+The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+This value creates a new stacking context when the value of z-index is not auto. The margins of absolutely positioned boxes do not collapse with other margins.
+
+<h3>fixed</h3>
+The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) Its final position is determined by the values of top, right, bottom, and left.
+This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.
+
+<h3>sticky</h3>
+The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
+This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the nearest actually scrolling ancestor. This effectively inhibits any "sticky" behavior (see the GitHub issue on W3C CSSWG).
+</div>
+ -->
+
+
+ <!-- CSS Z-Index: -->
+<!-- 
+ <div id="zIndexBox1">A</div>
+ <div id="zIndexBox2">B</div>
+ <div id="zIndexBox3">C</div>
+ <div id="zIndexBox4">D</div>
+ -->
+
+
+ <!-- CSS Media Queries -->
+<!-- All, Print, Screen, Speech -->
+
+<!-- reference for layout deisgn  -->
+
+
+<!-- Table Properties -->
+<!-- 
+<table>
+    <caption>Student Record...</caption>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>RollNo</th>
+    </tr>
+    <tr>
+        <td>Gargi To specify table borders in CSS, use the border property. The example below specifies a black</td>
+        <td>Luthra</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Maithili  To specify table borders in CSS, use the border property. The example below specifies a black
+            HTML Table - Add a Border. To add a border to a table, use the CSS border</td>
+        <td>Jagdale</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Trushna</td>
+        <td>Shaha</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Sharvi</td>
+        <td>Ghodage</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Keya</td>
+        <td>Gavade</td>
+        <td>5</td>
+    </tr>
+</table>
+ -->
+
+
+ <!-- CSS Resize -->
+<!-- horizontal, vertical, both, none -->
+<!-- 
+<div id="cssResize">
+    <h1>MinSkole...</h1>
+    <p>The resize property defines if (and how) an element is resizable by 
+        the user.
+        Note: The resize property does not apply to inline elements or to 
+        block elements where overflow="visible". So, make sure that overflow 
+        is set to "scroll", "auto", or "hidden".        
+        The resize property in CSS is used to resize the element according 
+        to user requirement. It does not apply to inline elements or to block 
+        elements where overflow is visible. none: The user is not able to resize 
+        the element. It is a default value.
+    </p>
+</div>
+
+<textarea name="" id="" cols="50" rows="10"></textarea>
+ -->
+
+
+ <!-- CSS Cursor -->
+
+<!-- 
+ <div id="cssCursor">
+    <h1>MinSkole...</h1>   
+ </div>
+ -->
+
+
+ <!-- CSS Measurement Units: -->
+ <!-- px(pixel), %(percentage), em, rem, vw(viewport width), 
+    vh(viewport height), vmax(viewport maximum), vmin(viewport minimum) -->
+
+    <!-- Percentage -->
+     <!-- <div id="cssMeasurement1">
+        <div id="cssMeasurement">
+            <h1>MinSkole...</h1>   
+         </div> 
+     </div> -->
+
+    <!-- em -->
+
+    <!-- <div id="cssMeasurement1">
+        <div id="cssMeasurement">
+            <h1>MinSkole...</h1>
+            <p>Knowledge Brings Reform...!!!!</p> 
+        </div>  
+    </div> -->
+
+        <!-- vw -->
+    <!-- <div id="cssMeasurement1">
+        <div id="cssMeasurement">
+            <h1>MinSkole...</h1>
+            <p>Knowledge Brings Reform...!!!!</p> 
+        </div>  
+    </div> -->
+
+    <!-- vmax -->
+<!-- 
+        <div id="cssMeasurement">
+            <h1>MinSkole...</h1>
+            <p>Knowledge Brings Reform...!!!!</p> 
+        </div>  
+ -->
+
+
+ <!-- CSS Variable: -->
+
+
+ <div id="wrapper">
+    <div id="header">
+      <h1>Welcome to MinSkole....!!!!!</h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h2>Basic Design Layout</h2>
+        <a href="#">Welcome to MinSkole...!!!!</a>
+        <p>
+           Whether you’re fairly new to CSS or an experienced developer from elsewhere in the stack who wants to make sure your understanding of layout today is up to date, this guide covers everything you need to know about CSS Layout today.
+               <br>
+           Over the past couple of years, CSS Layout has dramatically changed as well as the way we develop the front end of our sites. We now have a real choice in terms of the layout methods we use in CSS to develop our sites, which means we often need to make a choice as to which approach to take. In this article, I will run through the various layout methods that you have available to you by explaining the basics of how they are used and what they are used for.
+           <br>
+           This guide is for you if you are fairly new to CSS and wondering what the best way to approach layout is, but also if you are an experienced developer from elsewhere in the stack who wants to make sure your understanding of layout today is up to date. I have not tried to fully document each layout method here, as that would have created a book and not an article. Instead, I am giving an overview of what is available to you, with plenty of links to find out more.
+           <br>
+          <h3>Normal Flow</h3> 
+           If you take an HTML webpage which has no CSS applied to change the layout, the elements will display in normal flow. In normal flow, boxes are displayed one after another based on the Writing Mode of the document. This means that if you have a horizontal writing mode, one in which sentences run left to right or right to left, normal flow will display the boxes of block level elements one after the other vertically down the page.
+        </p>
+    </div>
+    <div id="sidebar">
+       <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Gallery</a></li>
+           <li><a href="#">Contact Us</a></li>
+       </ul>
+
+    </div>
+    <div id="footer">
+        minskole@copyright 2020.
+    </div>
+</div> 
+
+</body>
+</html>

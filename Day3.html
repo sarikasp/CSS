@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Third Day</title>
+</head>
+<body>
+
+    <h1>Welcome To MinSkole......!!!!</h1>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        #wordwrapBox{
+            width: 400px;
+            border: 3px solid black;
+
+            /* word-wrap: normal; */
+            /* word-wrap: break-word; */
+
+            /* word-break: keep-all; */
+            word-break: break-all;
+        }
+
+        #textShadowBox{
+            width: 300px;
+            border: 3px solid black;
+            padding: 25px;
+        }
+        h1{
+            /* color: white; */
+            color: black;
+            font-family: Constantia;
+            /* font-size: 80px; */
+
+            /* text-shadow: 2px 2px #ff0066; */
+            /* text-shadow: 2px 2px 2px #ff0066; */
+            /* text-shadow: -2px 2px 2px #ff0066; */
+            /* text-shadow: -2px -4px 2px #ff0066; */
+            /* text-shadow: 2px -4px 2px #ff0066; */
+            /* text-shadow: 2px 2px 2px #ff0066, 6px 6px 2px#66ff66, 10px 10px 2px #0066ff; */
+        }
+
+        #whiteSpaceBox{
+            width: 300px;
+            border: 3px solid black;
+
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+
+            /* white-space: pre; */
+            /* white-space: pre-line; */
+            /* white-space: pre-wrap; */
+            white-space: normal;
+        }
+
+        #textOverflowBox{
+            width: 400px;
+            border: 3px solid black;
+
+            white-space: nowrap;
+            overflow: hidden;
+
+            /* text-overflow: ellipsis; */
+
+            /* is only used for firefox */
+            /* text-overflow: " - "; */
+            /* text-overflow: " etc "; */
+            /* text-overflow: " [..] "; */
+            text-overflow: clip;
+        }
+
+        #writingModeBox{
+            width: 400px;
+            border: 2px solid black;
+
+            /* writing-mode: vertical-rl; */
+            /* writing-mode: vertical-lr; */
+
+            /* is only used for firefox */
+            /* writing-mode: sideways-rl; */
+            /* writing-mode: sideways-lr; */
+
+            writing-mode: horizontal-tb;
+        }
+        #columnCountBox{
+            border: 2px solid black;
+            width: 1000px;
+            padding: 25px;
+
+            /* column-count: 3; */
+            column-gap: 50px;
+            column-width: 2px;
+
+            /* column-rule-style:solid; */
+            /* column-rule-style:dotted; */
+            /* column-rule-style:dashed; */
+            /* column-rule-style:groove; */
+            /* column-rule-style:double; */
+
+            /* column-rule-color: red; */
+
+            column-rule: 5px dotted red;
+            column-width: 200px;
+        }
+        h2{
+            column-span: all;
+        }
+        /* @font-face {
+            font-family: openSans;
+            src: url(fonts/OpenSans-Regular-webfont.eot),
+                 url(fonts/OpenSans-Regular-webfont.woff);
+        }
+        h1{
+            font-family: openSans;
+        }
+        #fontFaceBox{
+            font-family: openSans;
+        } */
+        /* 
+        h1{
+            font-family: 'Open Sans', sans-serif;
+        }
+        #googleFontBox{
+         font-family: 'Roboto Condensed', sans-serif;
+        } */
+
+        ul{
+            /* list-style-type: circle; */
+            /* list-style-type: square; */
+            /* list-style-type: disc; */
+            /* list-style-type: none; */
+
+            border: 2px solid red;
+            /* list-style-position: inside; */
+            /* list-style-position: outside; */
+            /* list-style: url(img/blue.png); */
+            list-style: none inside url(img/blue.png);
+        }
+        ul li{
+            padding: 3px;
+        }
+
+        ol{
+            /* list-style-type:upper-alpha; */
+            /* list-style-type: lower-alpha; */
+            /* list-style-type: upper-roman; */
+            /* list-style-type:lower-roman; */
+            /* list-style-type: decimal; */
+            /* list-style-type: none; */
+
+            /* list-style-position: inside; */
+            /* list-style-position: outside; */
+        }
+
+        body{
+            /* background-image: url(img/css1.png), url(img/css2.jpeg);
+            background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-repeat: space; */
+            /* background-repeat: round; */
+
+            /* background-position: right top; */
+            /* background-position: left center; */
+            /* background-position: center center; */
+
+            /* background-position: right bottom; */
+            /* background-position: left bottom; */
+
+            /* background-position: 200px 100px; */
+            /* background-position: 40% 10% right center; */
+
+            background:url(img/css1.png) no-repeat center center;
+            background-color: #80ffbf;
+
+        }
+        #backgroundImageBox{
+            width: 400px;
+            border: 5px solid black;
+            padding: 25px;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+    </style>
+
+
+<!-- Word Wrap & Word-Break  --> 
+
+<!-- Word-Break -->
+<!--  
+    1. Break-all
+    2. keep-all 
+-->
+<!-- 
+    <div id="wordwrapBox">
+        The woooooooooooooooooooooooorrrrrrrrrrrrrrrrrrrrrrrrdddddddddddddddddddddd-wrap property allows long words to be abbllee to be broken and wrap onto the next line. Default value: normal.
+        The word-break property specifies how words should break when reaching the end of a line. Default value: normal.
+    </div>
+ -->
+
+ <!-- Text Shadow -->
+<!-- 
+ <div id="textShadowBox">
+    The text-shadow property adds shadow to text. This property accepts a 
+    comma-separated list of shadows to be applied to the text.
+ </div>
+ -->
+
+ <!-- White-Space Values: -->
+ <!-- normal, nowrap, pre, pre-line, pre-wrap -->
+
+<!-- 
+ <div id="whiteSpaceBox">
+    white-space is a CSS property      that helps control how whitespace 
+    and line breaks within an element's text are treated. 
+    The white-space property can take these values: normal: 
+    The default value. Multiple whitespaces are collapsed into one.
+ </div>
+ -->
+
+ <!-- Text-overflow Values -->
+ <!-- Clip(default), Ellipsis, String -->
+<!-- 
+    <div id="textOverflowBox">
+        The text-overflow property specifies how overflowed content that 
+        is not displayed should be signaled to the user. It can be 
+        clipped, display an ellipsis (...), or display a custom string.
+    </div>
+ -->
+
+<!-- Writing-mode Values -->
+<!-- horizontal-tb(default), vertical-rl, vertical-lr, sideways-rl, sideways-lr -->
+
+<!-- 
+<div id="writingModeBox">
+    The writing-mode CSS property sets whether lines of text are laid out
+    horizontally or vertically, as well as the direction in which blocks 
+    progress. When set for an entire document, it should be set on the 
+    root element ( html element for HTML documents).
+</div>
+ -->
+
+
+ <!-- CSS Column Property -->
+ <!-- 
+     Column-count,Column-gap,Column-rule,Column-rule-width,
+     Column-rule-style,Column-rule-color,Column-width,Column-fill,Column-span,Column
+-->
+
+<!-- 
+ <div id="columnCountBox">
+     <h2>MinSKole...</h2>
+    The column-count property specifies the number of columns an element 
+    should be divided into. Default value: auto. Inherited: no.
+    The column-count property specifies the number of columns an element 
+    should be divided into. 
+    The column-count CSS property breaks an element's content into the 
+    specified number of columns. CSS Demo: column-count. Reset.
+    column-count can be auto or an integer.
+    Use auto if you are also using column-width. Think of it as a way of 
+    telling the browser, to let column-width take the lead.
+    The integer, also known as the number of columns, must be greater than 
+    or equal to 0.
+ </div>
+  -->
+
+<!-- Font-Face Rule -->
+
+
+<!-- 
+<div id="fontFaceBox">
+    The @font-face CSS at-rule specifies a custom font with which to 
+    display text; the font can be loaded from either a remote server or 
+    a locally-installed font on the user's own computer.
+</div>
+ -->
+
+
+ <!-- Google Fonts -->
+<!-- 
+ <div id="googleFontBox">
+    Today I'm going to be talking about text-related CSS properties, 
+    as well as how to spice up your website with this nifty thing called 
+    Google Fonts.
+ </div>
+  -->
+
+  
+<!-- CSS List Style Properties: -->
+<!-- list-style-image, list-style-position, list-style-type, list-style -->
+
+<!-- 
+<ul>
+    <li>Orachid</li>
+    <li>Lily</li>
+    <li>Jasmine</li>
+    <li>Rose</li>
+    <li>Aster</li>
+</ul>
+
+<ol>
+    <li>Orachid</li>
+    <li>Lily</li>
+    <li>Jasmine</li>
+    <li>Rose</li>
+    <li>Aster</li>
+</ol>
+ -->
+
+
+<!-- CSS Background Image: -->
+<!-- 
+    1. Backgroung-image
+    2. Backgroung-repeat
+    3. Backgroung-position 
+-->
+
+<div id="backgroundImageBox">
+    The background-image property sets one or more background images for 
+    an element. By default, a background-image is placed at the top-left 
+    corner of an element, and repeated both vertically and horizontally.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Day</title>
+
+    <style>
+        h1{
+            /* border-width: 3px; */
+            /* border-style: solid; */
+            /* border-style: dotted; */
+            /* border-style: dashed; */
+            /* border-style: double; */
+            /* border-width: 8px; */
+            /* border-style: groove; */
+            /* border-style: ridge; */
+            /* border-style: inset; */
+            /* border-style: outset; */
+            /* border-style: none; */
+            /* border-style:solid dotted dashed inset;
+            border-color: red; */
+
+            /* border:3px double red; */
+
+            /* border-bottom: 3px solid red; */
+            /* border-top: 3px dashed green; */
+        }
+        p{
+            /* border: 5px solid greenyellow; */
+            /* outline-width: 5px; */
+            /* outline-style: solid; */
+            /* outline-style: dotted; */
+            /* outline-style: dashed; */
+            /* outline-color: red; */
+            /* outline-width: 3px;
+            outline-style: solid;
+            outline-color: red;
+            outline-offset: 4px; */
+
+            /* outline: 3px dashed red;
+            outline-offset: 4px; */
+        }
+        .box{
+            /* border: 3px solid navy; */
+            /* padding: 10px 20px 100px 10px; */
+            /* padding: 20px 50px; */
+        }
+
+        /* #first{
+            border: 3px solid black;
+            margin-bottom: 30px;
+        } */
+
+        #second{
+            /* border: 3px solid red; */
+            /* margin-left: 300px; */
+            /* margin: 10px 200px 0 300px; */
+        }
+
+        #third{
+            /* width: 500px;
+            border: 3px solid navy; */
+            /* margin: 0 auto 0 auto; */
+            /* margin: 10px auto 0 auto; */
+        }
+
+        /* h1{
+            margin: 0 0 50px;
+        } */
+
+        #widthBox{
+                /* width: 500px; */
+                /* width: 100%; */
+                width: 50%;
+                height: 100px;
+                border: 2px solid red;
+        }
+
+        #heightBox{
+                /* width: 500px; */
+                /* width: 100%; */
+                width: 700px;
+                /* height: 100px; */
+                min-height: 200px;
+                max-height: 500px;
+                border: 2px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Welcome To MinSKole...!!!!</h1>
+
+    <!-- CSS COLOR: -->
+<!-- 
+    <h1 style="color: #99cc00; background:#ccffff">Welcome To MinSKole...!!!!</h1>
+    
+    <p style="color: #ff0080; background: #b3ffcc;">
+        The HTML p element defines a paragraph. A paragraph always <br>
+        starts on a new line, and browsers automatically add some <br>
+        white space (a margin) before and after a paragraph.
+    </p>
+
+    <p style="color: #cc0066;background: #daffb3;">
+        The HTML p element defines a paragraph. A paragraph always <br>
+        <span style="background: #b3b3ff">starts on a new line, and browsers automatically add some </span> <br>
+        white space (a margin) before and after a paragraph.
+    </p>
+ -->
+
+ <!-- Type of Basic Selector: -->
+<!--  
+    1. By Tag Name
+    2. Class
+    3. Id
+-->
+
+<!-- Tag Name: -->
+<!-- 
+    h1{
+        color:red;
+        font-size:12px;
+    }
+    table{}
+    div{} 
+-->
+
+<!-- Class Selectore -->
+<!-- 
+    .header{}
+    <div class="header"></div> 
+
+    .list-menu{}
+    .side_text{}
+    .footerHeading{}
+-->
+
+<!-- Id Selectore -->
+<!-- 
+    #menu{}
+    <ul id="menu">
+        <li>Text</li>
+        <li>Text</li>
+        <li>Text</li>
+    </ul> 
+-->
+
+<!-- 
+    Id Selectore:
+    Can only use one time in one page.
+
+    Class Selector:
+    Can use multiple times in one page. 
+-->
+
+<!-- Descendant Selector: -->
+<!-- 
+    #header a{}  #header is called parent Selector & a is child Selector
+    .list p{}
+    ul#menu li{}
+ -->
+
+
+<!-- CSS Border Properties: -->
+<!-- 
+    Border-Width
+    Border-Style
+    Border-Color
+ -->
+<!-- CSS Border Style: -->
+<!-- 
+    Solid, dotted, dashed, double, groove, ridge, inset, outset, none  
+-->
+
+<!-- 
+    border-width: 2px;
+    border-style: solid;
+    border-color: reg;
+ -->
+<!-- CSS Border Shorthand: -->
+<!-- border: 2px solid red; -->
+
+<!-- CSS Border Side: -->
+<!-- 
+    border-top
+    border-right
+    border-bottom
+    border-left
+ -->
+
+<!--
+     <p>
+        Like you saw in the previous page, there are many properties to consider when dealing with borders.
+    </p>
+    <p>
+        To shorten the code, it is also possible to specify all the individual border properties in one property.
+        border-width
+        border-style (required)
+        border-color
+    </p>
+    If border-color is omitted, the color applied will be the color of the text.
+    The CSS border properties allow you to specify the style, width, and color of an element's border. 
+-->
+
+
+<!-- CSS Outline Properties: -->
+
+<!-- 
+    Outline-Width
+    Outline-Style
+    Outline-Color
+    Outline-Offset
+ -->
+
+<!-- CSS Outline Style: -->
+<!-- 
+    Solid, dotted, dashed, double, groove, ridge, inset, outset, none  
+-->
+
+<!-- 
+    outline-width: 2px
+    outline-style:solid
+    outline-color:red
+ -->
+ <!-- CSS Outline Shorthand: -->
+ 
+ <!-- outline: 2px solid red -->
+<!-- 
+    <p><br>
+        The outline-style property specifies the style of the outline, and can have one of the following values: <br>
+        dotted - Defines a dotted outline. dashed - Defines a dashed outline. solid - Defines a solid outline. <br> <br> </p>
+        <p> <br>
+        double - Defines a double outline. groove - Defines a 3D grooved outline. ridge - Defines a 3D ridged outline. <br><br>
+    </p> 
+-->
+
+<!-- CSS Padding Properties: -->
+<!-- 
+    padding-top
+    padding-right
+    padding-left
+    padding-bootom
+-->
+<!-- 
+    <div class="box">
+
+        The CSS padding properties are used to generate space around 
+        an element's content, inside of any defined borders. 
+        With CSS, you have full control over the padding. 
+        There are properties for setting the padding for
+        each side of an element (top, right, bottom, and left).
+    </div> 
+-->
+
+<!-- CSS Margin Properties: -->
+<!-- 
+    margin-top
+    margin-right
+    margin-left
+    margin-bootom
+-->
+<!-- 
+<div id="first">
+    Top and bottom margins of elements are sometimes collapsed into a single margin
+    that is equal to the largest of the two margins.
+    This does not happen on left and right margins! Only top and bottom margins!
+    The margin property sets the margins for an element, and is a shorthand 
+    property for the following properties: margin-top. margin-right.
+</div>
+
+<div id="second">
+    Top and bottom margins of elements are sometimes collapsed into a single margin
+    that is equal to the largest of the two margins.
+    This does not happen on left and right margins! Only top and bottom margins!
+    The margin property sets the margins for an element, and is a shorthand 
+    property for the following properties: margin-top. margin-right.
+</div>
+
+<div id="third">
+    Top and bottom margins of elements are sometimes collapsed into a single margin
+    that is equal to the largest of the two margins.
+    This does not happen on left and right margins! Only top and bottom margins!
+    The margin property sets the margins for an element, and is a shorthand 
+    property for the following properties: margin-top. margin-right.
+</div> 
+-->
+
+
+<!-- CSS Width Properties: -->
+<!-- 
+<div id="widthBox">
+    The width property sets the width of an element. The width of an element does not include padding, borders, 
+    or margins! Note: The min-width and max-width properties override the width property.
+</div> 
+-->
+
+<!-- CSS Height Properties: -->
+<!-- 
+<div id="heightBox">
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+</div> -->
+
+
+<div id="heightBox">
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+    
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+    
+    Definition and Usage. The height property sets the height of an element. 
+    The height of an element does not include padding, borders, or margins! If height: auto;
+</div>
+
+</body>
+</html>
